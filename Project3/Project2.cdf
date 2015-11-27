@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C20F484) Path("C:/Users/yoeli/Desktop/Project3/") File("Project2.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C20F484) Path("E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/") File("Project2.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

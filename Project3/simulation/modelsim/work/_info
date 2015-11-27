@@ -1,0 +1,341 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Dropbox\Documents\University\CS 3220\Assignment\Real Project 4 - Bussing\Project3\simulation\modelsim
+vALU
+Z1 !s100 W?FEcgI]JQ<zaYAFle;Do0
+Z2 I=cSKgTgM@zL0GkkKA^6]c3
+Z3 VIY4kTo8@n2X0JdnJ5MX4C1
+Z4 dE:\Dropbox\Documents\University\CS 3220\Assignment\Real Project 4 - Bussing\Project3\simulation\modelsim
+Z5 w1445533464
+Z6 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/ALU.v
+Z7 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/ALU.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/ALU.v|
+Z10 o-vlog01compat -work work -O0
+Z11 !s92 -vlog01compat -work work {+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3} -O0
+Z12 n@a@l@u
+Z13 !s108 1448136694.933000
+Z14 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/ALU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDataMemory
+Z15 IGG>A51OD@XnG2i@GLZI613
+Z16 VCJI?hGomVMD4KWBDI[4Qg3
+R4
+Z17 w1448109936
+Z18 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/DataMemory.v
+Z19 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/DataMemory.v
+L0 1
+R8
+r1
+31
+Z20 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/DataMemory.v|
+R10
+R11
+Z21 n@data@memory
+Z22 !s100 c_]n3Gm05E3lbLCKaDdMm1
+Z23 !s108 1448136695.120000
+Z24 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/DataMemory.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vForwardingUnit
+Z25 !s100 2eNcaXAfOBFH5JF9FCYFQ0
+Z26 IG[M=FLI^z9HN=GoDDZRQ_3
+Z27 VK3E^k?c^FinT=_:jBa:PW3
+R4
+Z28 w1447224530
+Z29 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/ForwardingUnit.v
+Z30 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/ForwardingUnit.v
+L0 1
+R8
+r1
+31
+Z31 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/ForwardingUnit.v|
+R10
+R11
+Z32 n@forwarding@unit
+Z33 !s108 1448136694.098000
+Z34 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/ForwardingUnit.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vInstMemory
+Z35 !s100 3TM^jHF:gga<BgYGQkaJ20
+Z36 IDN4QRl>6E>?bOa8672@mS2
+Z37 VUJYb>IZO9F_mPNHYd`^832
+R4
+Z38 w1445539358
+Z39 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/InstMemory.v
+Z40 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/InstMemory.v
+L0 1
+R8
+r1
+31
+Z41 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/InstMemory.v|
+R10
+R11
+Z42 n@inst@memory
+Z43 !s108 1448136695.307000
+Z44 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/InstMemory.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMux2to1
+Z45 !s100 R7h@0E@@N]zJ?`5?EcnkB0
+Z46 IH]E96hV?DXNVZa:RlRzb_2
+Z47 VS>^Vj[>3Jh`BcTXgdhn3^1
+R4
+R5
+Z48 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Mux2to1.v
+Z49 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Mux2to1.v
+L0 1
+R8
+r1
+31
+Z50 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Mux2to1.v|
+R10
+R11
+Z51 n@mux2to1
+Z52 !s108 1448136695.471000
+Z53 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Mux2to1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMux3to1
+Z54 !s100 @P3ZESE8IUo`KbIlmP5Sn1
+Z55 Ic;b9RZWKd4boI6I8nhP5V3
+Z56 VlAQ2zXKbZG5eL6DKG6Ti]3
+R4
+R5
+Z57 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Mux3to1.v
+Z58 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Mux3to1.v
+L0 1
+R8
+r1
+31
+Z59 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Mux3to1.v|
+R10
+R11
+Z60 n@mux3to1
+Z61 !s108 1448136695.702000
+Z62 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Mux3to1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vPCAdder
+Z63 !s100 4P9j@OB><abh57V1=mPo11
+Z64 Icl_iaiCRoCJQR:G;e_@NE0
+Z65 V7947d^EH64=dlh<=FQe?D2
+R4
+R5
+Z66 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/PCAdder.v
+Z67 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/PCAdder.v
+L0 1
+R8
+r1
+31
+Z68 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/PCAdder.v|
+R10
+R11
+Z69 n@p@c@adder
+Z70 !s108 1448136695.889000
+Z71 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/PCAdder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vPCIncrement
+Z72 !s100 ecQ9FEOZX;49Q0jVoHU]41
+Z73 IY<[X2ibdg4MeSKbM`XJ5?2
+Z74 VEF3T_HaVB^aohYQgTCD9[0
+R4
+R5
+Z75 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/PCIncrement.v
+Z76 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/PCIncrement.v
+L0 1
+R8
+r1
+31
+Z77 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/PCIncrement.v|
+R10
+R11
+Z78 n@p@c@increment
+Z79 !s108 1448136696.115000
+Z80 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/PCIncrement.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vProcTest
+!i10b 1
+!s100 <I[YR^XFKR`<DEZ4F`MOH1
+IDJ2mIc5RaCaSKDU?Ln9HX1
+Z81 V>01jFz1@1N0io2LR?oz621
+R4
+w1448136682
+Z82 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/ProcTest.v
+Z83 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/ProcTest.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1448136697.049000
+!s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/ProcTest.v|
+Z84 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/ProcTest.v|
+!s101 -O0
+R10
+R11
+Z85 n@proc@test
+vProject2
+Z86 Izai@3;3Y;?[c_AcO^ASz53
+Z87 V:IFi^V:UfEzZGmAK7E4cE3
+R4
+Z88 w1448135484
+Z89 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Project2.v
+Z90 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Project2.v
+L0 1
+R8
+r1
+31
+Z91 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Project2.v|
+R10
+R11
+Z92 n@project2
+Z93 !s100 T?BF`S8BPoeg;[Cbz1UCP2
+Z94 !s108 1448136694.324000
+Z95 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Project2.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRegister
+Z96 !s100 eh9@6F8k[P::>L6IN4;@V3
+Z97 I?<KSCLjWf^6g:AHUcI`S=3
+Z98 VcF=KTBfmNkUbE2U153[EE2
+R4
+Z99 w1445533466
+Z100 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Register.v
+Z101 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Register.v
+L0 1
+R8
+r1
+31
+Z102 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Register.v|
+R10
+R11
+Z103 n@register
+Z104 !s108 1448136696.304000
+Z105 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/Register.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRegisterFile
+Z106 !s100 ]89j?FGzf>D3mn02df9b10
+Z107 I:Pl0K38cIQL4d]LG>02VZ1
+Z108 V0[Vh0R[DV9ll7MLUa??MB3
+R4
+R99
+Z109 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/RegisterFile.v
+Z110 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/RegisterFile.v
+L0 1
+R8
+r1
+31
+Z111 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/RegisterFile.v|
+R10
+R11
+Z112 n@register@file
+Z113 !s108 1448136696.510000
+Z114 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/RegisterFile.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSCProcController
+Z115 !s100 :lOfg83=1SCn=QAHI<go`0
+Z116 Ini[TA3V<1U>KUgz9IFN:W3
+Z117 VKLS;XF`C^=WzS8D;Xck@M3
+R4
+R99
+Z118 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/SCProcController.v
+Z119 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/SCProcController.v
+L0 1
+R8
+r1
+31
+Z120 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/SCProcController.v|
+R10
+R11
+Z121 n@s@c@proc@controller
+Z122 !s108 1448136696.693000
+Z123 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/SCProcController.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSevenSeg
+Z124 !s100 ?^go1C:a;DU^63K:o>>kW2
+Z125 ITjQ7OE=HYBg`<dA@Fi<?m3
+Z126 VKZQ;?2zCF>`gI56YS>C7c1
+R4
+R99
+Z127 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/SevenSeg.v
+Z128 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/SevenSeg.v
+L0 1
+R8
+r1
+31
+Z129 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/SevenSeg.v|
+R10
+R11
+Z130 n@seven@seg
+Z131 !s108 1448136694.521000
+Z132 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/SevenSeg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSignExtension
+Z133 !s100 GQG3G?Oz_n^c@WJbPFYBD1
+Z134 ILC2iDa9IO@U;l30OPkaad2
+Z135 VjjMXQ2A_@M;USO7=KT?Vh1
+R4
+R99
+Z136 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/SignExtension.v
+Z137 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/SignExtension.v
+L0 1
+R8
+r1
+31
+Z138 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/SignExtension.v|
+R10
+R11
+Z139 n@sign@extension
+Z140 !s108 1448136694.763000
+Z141 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/SignExtension.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTimer
+Z142 IEQH83YYdRPKZGdbBZeCPk3
+Z143 Vz<R45:]_8B2K6`GG@m^J91
+R4
+Z144 w1448133160
+Z145 8E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/timer.v
+Z146 FE:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/timer.v
+L0 1
+R8
+r1
+31
+Z147 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3|E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/timer.v|
+R10
+R11
+Z148 n@timer
+!i10b 1
+Z149 !s100 `P<0b3`A;AG9LHhM;m9330
+!s85 0
+Z150 !s108 1448136696.865000
+Z151 !s107 E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/timer.v|
+!s101 -O0

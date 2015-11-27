@@ -67,7 +67,7 @@ module ProcTest;
     end
 
     always@(posedge clk) begin
-        if(counter == 200)    // stop after 5 cycles
+        if(counter == 1024)    // stop after 5 cycles
             $stop;
 
         $display("cycle = %d", counter);
@@ -108,15 +108,26 @@ module ProcTest;
         $display("memtoReg        :          %d", CPU.buff_memtoReg);
         $display("regWrite        :          %d", CPU.buff_regWrite);
         $display("jal             :          %d", CPU.buff_jal);
+        $display("data_bus        : %d", CPU.data_bus);
+        $display("addr_bus        : %d", CPU.addr_bus);
+        $display("DataMemory.wrtEn:          %d", CPU.dataMemory.wrtEn);
+        $display("DataMemory.dIn  : %d", CPU.dataMemory.dIn);
+        $display("tcnt            : %d", CPU.timer.tcnt);
+        $display("tctl            : %d", CPU.timer.tctl);
+        $display("tlim            : %d", CPU.timer.tlim);
+        $display("count           : %d", CPU.timer.count1000Hz);
+        $display("timer.dbus_out  : %d", CPU.timer.dbus_out);
+        $display("timer.abus      : %h", CPU.timer.abus);
+        $display("timer.wren      :          %d", CPU.timer.wren);
 
 
         // print Data Memory
         $display();
         $display("Data Memory");
         $display("DMEM[%d]=%d", prevMemOut, CPU.dataMemory.data[prevMemOut]);
-        $display("DMEM[%d]=%d", CPU.buff_aluOut, CPU.memDataOut);
+        $display("DMEM[%d]=%d", CPU.dataMemory.addr, CPU.dataMemory.dOut);
 
-        prevMemOut <= CPU.buff_aluOut;
+        prevMemOut <= CPU.dataMemory.addr;
         // $display("Data data: 0x00 =%d", {CPU.dataMemory.data[3] , CPU.dataMemory.data[2] , CPU.dataMemory.data[1] , CPU.dataMemory.data[0] });
         // $display("Data data: 0x04 =%d", {CPU.dataMemory.data[7] , CPU.dataMemory.data[6] , CPU.dataMemory.data[5] , CPU.dataMemory.data[4] });
         // $display("Data data: 0x08 =%d", {CPU.dataMemory.data[11], CPU.dataMemory.data[10], CPU.dataMemory.data[9] , CPU.dataMemory.data[8] });

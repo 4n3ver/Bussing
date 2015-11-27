@@ -1,5 +1,5 @@
-module Project2(/*clk, reset,*/ SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
-  //input clk, reset;
+module Project2(clk, reset,SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
+  input clk, reset;
 
   input  [9:0] SW;
   input  [3:0] KEY;
@@ -20,7 +20,7 @@ module Project2(/*clk, reset,*/ SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   parameter START_PC               = 32'h40;
   parameter REG_INDEX_BIT_WIDTH    = 4;
 
-  parameter IMEM_INIT_FILE         = "Sorter2.mif";
+  parameter IMEM_INIT_FILE         = "stopwatch.mif";
 
   parameter IMEM_ADDR_BIT_WIDTH      = 11;
   parameter IMEM_DATA_BIT_WIDTH      = INST_BIT_WIDTH;
@@ -30,11 +30,11 @@ module Project2(/*clk, reset,*/ SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   parameter IMEM_PC_BITS_HI          = IMEM_ADDR_BIT_WIDTH + 2;
   parameter IMEM_PC_BITS_LO          = 2;
 
- // PLL, clock generation, and reset generation
-  wire clk, lock, reset;
-  PLL PLL_inst (.inclk0 (CLOCK_50),.c0 (clk),.locked (lock));
-  //assign clk = ~KEY[0];
-  assign reset = ~lock;
+ // // PLL, clock generation, and reset generation
+ //  wire clk, lock, reset;
+ //  PLL PLL_inst (.inclk0 (CLOCK_50),.c0 (clk),.locked (lock));
+ //  //assign clk = ~KEY[0];
+ //  assign reset = ~lock;
 
   // Wires..
   wire pcWrtEn = 1'b1;
@@ -174,26 +174,46 @@ module Project2(/*clk, reset,*/ SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
     end
   end
 
+  wire [31:0] dbus_p, dbus_t, dbus_m;
+  wire [31:0] data_bus, addr_bus;
+  wire wr_en;
+
+  // Master Controlled
+  assign addr_bus = buff_aluOut;
+  assign wr_en    = buff_memWrite;
+  assign dbus_p   = buff_memWrite ? buff_sr2Out : 32'b0;
+
+  assign data_bus = dbus_p | dbus_t | dbus_m;
+
+  Timer timer(
+    .dbus_out(dbus_t),
+    .dbus_in(data_bus),
+    .abus(addr_bus),
+    .wren(wr_en),
+    .clk (clk),
+    .rst (reset)
+  );
+
   // Create DataMemory
   DataMemory #(IMEM_INIT_FILE, DMEM_ADDR_BIT_WIDTH, DMEM_DATA_BIT_WIDTH,
     TRUE_DMEM_ADDR_BIT_WIDTH) dataMemory (
     .clk(clk),
-    .wrtEn(buff_memWrite),
-    .addr(buff_aluOut),
-    .dIn(buff_sr2Out),
+    .wren(wr_en),
+    .addr(addr_bus),
+    .dIn(data_bus),
     .sw(buff_SW),
     .key(buff_KEY),
     .ledr(ledr),
     .ledg(ledg),
     .hex(hex),
-    .dOut(memDataOut)
+    .dbus_out(dbus_m)
   );
 
   // Create dataMux to RegFile
   Mux3to1 #(DBITS) dataMux (
     .sel({buff_jal, buff_memtoReg}),
     .dInSrc1(buff_aluOut),
-    .dInSrc2(memDataOut),
+    .dInSrc2(data_bus),
     .dInSrc3(buff_incrementedPC),
     .dOut(dataMuxOut)
   );

@@ -1,5 +1,5 @@
 MIF/HEX Update report for Project2
-Sat Oct 24 12:11:21 2015
+Sat Nov 21 00:09:35 2015
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -35,7 +35,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; MIF/HEX Update Summary                                        ;
 +-----------------------+---------------------------------------+
-; MIF/HEX Update Status ; Successful - Sat Oct 24 12:11:21 2015 ;
+; MIF/HEX Update Status ; Successful - Sat Nov 21 00:09:34 2015 ;
 ; Revision Name         ; Project2                              ;
 ; Top-level Entity Name ; Project2                              ;
 ; Family                ; Cyclone II                            ;
@@ -43,13 +43,13 @@ applicable agreement for further details.
 +-----------------------+---------------------------------------+
 
 
-+------------------------------------------------------------------------+
-; MIF/HEX Update Processed Files                                         ;
-+------------------------------------------------------------------------+
-; File Name                                                              ;
-+------------------------------------------------------------------------+
-; //psf/Home/Downloads/0000 WORKING PROCESSOR 2/SC3220Project2/Test2.mif ;
-+------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; MIF/HEX Update Processed Files                                                                     ;
++----------------------------------------------------------------------------------------------------+
+; File Name                                                                                          ;
++----------------------------------------------------------------------------------------------------+
+; E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/stopwatch.mif ;
++----------------------------------------------------------------------------------------------------+
 
 
 +-------------------------+
@@ -58,14 +58,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit MIF/HEX Update
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Oct 24 12:11:20 2015
+    Info: Processing started: Sat Nov 21 00:09:33 2015
 Info: Command: quartus_cdb Project2 -c Project2 --update_mif
 Info (39024): Processed the following Memory Initialization File(s)
-    Info (39025): Processed Memory Initialization File //psf/Home/Downloads/0000 WORKING PROCESSOR 2/SC3220Project2/Test2.mif
+    Info (39025): Processed Memory Initialization File E:/Dropbox/Documents/University/CS 3220/Assignment/Real Project 4 - Bussing/Project3/stopwatch.mif
 Info: Quartus II 64-Bit MIF/HEX Update was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 466 megabytes
-    Info: Processing ended: Sat Oct 24 12:11:21 2015
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 525 megabytes
+    Info: Processing ended: Sat Nov 21 00:09:35 2015
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -331,7 +331,7 @@ NC                           : K18       :        :                   :         
 GND                          : K19       : gnd    :                   :         :           :                
 RESERVED_INPUT               : K20       :        :                   :         : 5         :                
 RESERVED_INPUT               : K21       :        :                   :         : 5         :                
-RESERVED_INPUT               : K22       :        :                   :         : 5         :                
+reset                        : K22       : input  : 3.3-V LVTTL       :         : 5         : N              
 CLOCK_50                     : L1        : input  : 3.3-V LVTTL       :         : 2         : Y              
 SW[9]                        : L2        : input  : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : L3        : power  :                   : 3.3V    : 2         :                
@@ -374,7 +374,7 @@ MSEL0                        : M17       :        :                   :         
 RESERVED_INPUT               : M18       :        :                   :         : 6         :                
 RESERVED_INPUT               : M19       :        :                   :         : 6         :                
 VCCIO6                       : M20       : power  :                   : 3.3V    : 6         :                
-GND+                         : M21       :        :                   :         : 6         :                
+clk                          : M21       : input  : 3.3-V LVTTL       :         : 6         : N              
 SW[2]                        : M22       : input  : 3.3-V LVTTL       :         : 6         : Y              
 RESERVED_INPUT               : N1        :        :                   :         : 1         :                
 RESERVED_INPUT               : N2        :        :                   :         : 1         :                

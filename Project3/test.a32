@@ -1,0 +1,50 @@
+; Addresses for I/O
+.NAME   ORIGIN  = 0x10
+.NAME   STACKTOP= 2048
+.NAME   IOBASE  = 0xF0000000
+.NAME   OFSHEX  = 0x00000000
+.NAME   OFSLEDR = 0x00000004
+.NAME   OFSLEDG = 0x00000008
+.NAME   OFSKEY  = 0x00000010
+.NAME   OFSSW   = 0x00000014
+.NAME   TCNT    = 0x00000020;
+.NAME   TLIM    = 0x00000024;
+.NAME   TCTL    = 0x00000120;
+
+
+; Make sure fp always zero
+.ORIG 0x40
+    mvhi    sp, STACKTOP        ; setup stack
+    addi    sp, sp, STACKTOP    ; setup stack
+    mvhi    gp, IOBASE
+    xor     fp, fp, fp          ; zero out fp
+    addi    a0, fp, 36
+    addi    a1, fp, 26
+
+; set limit
+    addi    t0, fp, 100
+    sw      t0, TLIM(gp)
+    add     s0, a0, a1
+    sw      s0, OFSHEX(gp)
+Poll:
+    sw      t0, OFSLEDR(gp)
+    lw      t0, TCTL(gp)
+    beq     t0, fp, Poll
+    sw      fp, TCTL(gp)
+    sw      fp, OFSLEDR(gp)
+    addi    t0, fp, 0x3
+    sw      t0, OFSLEDG(gp)
+    beq     a0, fp, DECMIN
+    addi    a0, a0, -1
+DECMIN:
+    beq     a1, fp, Done
+    addi    a1, a1, -1
+    add     s0, a0, a1
+    sw      s0, OFSHEX(gp)
+    br      Poll
+
+Done:
+    ; Turn on LEDG, put FFFF on HEX, LEDR should still be off
+    not     t0,fp
+    sw      t0,OFSLEDG(gp)
+    br      Done

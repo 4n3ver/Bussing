@@ -1,3 +1,11 @@
 Warning (10268): Verilog HDL information at ProcTest.v(69): always construct contains both blocking and non-blocking assignments
 Info (10281): Verilog HDL Declaration information at Project2.v(8): object "LEDG" differs only in case from object "ledg" in the same scope
 Info (10281): Verilog HDL Declaration information at Project2.v(7): object "LEDR" differs only in case from object "ledr" in the same scope
+Info (10281): Verilog HDL Declaration information at DataMemory.v(11): object "KEY" differs only in case from object "key" in the same scope
+Info (10281): Verilog HDL Declaration information at DataMemory.v(12): object "SW" differs only in case from object "sw" in the same scope
+Info (10281): Verilog HDL Declaration information at DataMemory.v(9): object "LEDR" differs only in case from object "ledr" in the same scope
+Info (10281): Verilog HDL Declaration information at DataMemory.v(10): object "LEDG" differs only in case from object "ledg" in the same scope
+Info (10281): Verilog HDL Declaration information at DataMemory.v(8): object "HEX" differs only in case from object "hex" in the same scope
+Info (10281): Verilog HDL Declaration information at timer.v(2): object "TCNT" differs only in case from object "tcnt" in the same scope
+Info (10281): Verilog HDL Declaration information at timer.v(3): object "TLIM" differs only in case from object "tlim" in the same scope
+Info (10281): Verilog HDL Declaration information at timer.v(4): object "TCTL" differs only in case from object "tctl" in the same scope
