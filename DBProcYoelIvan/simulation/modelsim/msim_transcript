@@ -1,0 +1,205 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Project2_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/ForwardingUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ForwardingUnit
+# 
+# Top level modules:
+# 	ForwardingUnit
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/Project2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Project2
+# 
+# Top level modules:
+# 	Project2
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/SevenSeg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SevenSeg
+# 
+# Top level modules:
+# 	SevenSeg
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/PLL.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PLL
+# 
+# Top level modules:
+# 	PLL
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/SignExtension.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SignExtension
+# 
+# Top level modules:
+# 	SignExtension
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/InstMemory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module InstMemory
+# 
+# Top level modules:
+# 	InstMemory
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/Mux2to1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux2to1
+# 
+# Top level modules:
+# 	Mux2to1
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/Mux3to1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux3to1
+# 
+# Top level modules:
+# 	Mux3to1
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/PCAdder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PCAdder
+# 
+# Top level modules:
+# 	PCAdder
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/PCIncrement.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PCIncrement
+# 
+# Top level modules:
+# 	PCIncrement
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/Register.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Register
+# 
+# Top level modules:
+# 	Register
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/RegisterFile.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/SCProcController.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SCProcController
+# 
+# Top level modules:
+# 	SCProcController
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/Key.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keyModule
+# 
+# Top level modules:
+# 	keyModule
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/Switch.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module switchModule
+# 
+# Top level modules:
+# 	switchModule
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/ledrModule.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ledrModule
+# 
+# Top level modules:
+# 	ledrModule
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/ledgModule.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ledgModule
+# 
+# Top level modules:
+# 	ledgModule
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/hexModule.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hexModule
+# 
+# Top level modules:
+# 	hexModule
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/DataMem.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DataMem
+# 
+# Top level modules:
+# 	DataMem
+# 
+# vlog -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 {D:/Bussing-master/Bussing-master/Project3/ProcTest.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ProcTest
+# 
+# Top level modules:
+# 	ProcTest
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  ProcTest
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps ProcTest 
+# Loading work.ProcTest
+# Loading work.Project2
+# Loading work.PLL
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.Mux3to1
+# Loading work.Register
+# Loading work.PCIncrement
+# Loading work.InstMemory
+# Loading work.SCProcController
+# Loading work.SignExtension
+# Loading work.PCAdder
+# Loading work.RegisterFile
+# Loading work.ForwardingUnit
+# Loading work.Mux2to1
+# Loading work.ALU
+# Loading work.DataMem
+# Loading work.keyModule
+# Loading work.switchModule
+# Loading work.ledrModule
+# Loading work.ledgModule
+# Loading work.hexModule
+# Loading work.SevenSeg
+# Loading altera_mf_ver.MF_stratixii_pll
+# Loading altera_mf_ver.MF_pll_reg
+# Loading altera_mf_ver.arm_m_cntr
+# Loading altera_mf_ver.arm_n_cntr
+# Loading altera_mf_ver.arm_scale_cntr
+# ** Warning: (vsim-3008) D:/Bussing-master/Bussing-master/Project3/ProcTest.v(128): [CNNODP] - Component name (addr_bus) is not on a downward path.
+# 
+#         Region: /ProcTest
+# ** Error: (vsim-3043) D:/Bussing-master/Bussing-master/Project3/ProcTest.v(128): Unresolved reference to 'addr_bus' in CPU.dataMem.addr_bus.
+# 
+#         Region: /ProcTest
+# ** Warning: (vsim-3008) D:/Bussing-master/Bussing-master/Project3/ProcTest.v(114): [CNNODP] - Component name (dbus_in) is not on a downward path.
+# 
+#         Region: /ProcTest
+# ** Error: (vsim-3043) D:/Bussing-master/Bussing-master/Project3/ProcTest.v(114): Unresolved reference to 'dbus_in' in CPU.dataMem.dbus_in.
+# 
+#         Region: /ProcTest
+# ** Warning: (vsim-3008) D:/Bussing-master/Bussing-master/Project3/ProcTest.v(115): [CNNODP] - Component name (timer) is not on a downward path.
+# 
+#         Region: /ProcTest
+# ** Error: (vsim-3043) D:/Bussing-master/Bussing-master/Project3/ProcTest.v(115): Unresolved reference to 'timer' in CPU.timer.
+# 
+#         Region: /ProcTest
+# ** Error: (vsim-3043) D:/Bussing-master/Bussing-master/Project3/ProcTest.v(108): Unresolved reference to 'CPUs'.
+# 
+#         Region: /ProcTest
+# ** Error: (vsim-3389) D:/Bussing-master/Bussing-master/Project3/ProcTest.v(30): Port 'clk' not found in the connected module (1st connection).
+# 
+#         Region: /ProcTest/CPU
+# ** Error: (vsim-3389) D:/Bussing-master/Bussing-master/Project3/ProcTest.v(30): Port 'reset' not found in the connected module (2nd connection).
+# 
+#         Region: /ProcTest/CPU
+# ** Fatal: (vsim-3365) D:/Bussing-master/Bussing-master/Project3/ProcTest.v(30): Too many port connections. Expected 9, found 11.
+#    Time: 0 ps  Iteration: 0  Instance: /ProcTest/CPU File: D:/Bussing-master/Bussing-master/Project3/Project2.v
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./Project2_run_msim_rtl_verilog.do PAUSED at line 31

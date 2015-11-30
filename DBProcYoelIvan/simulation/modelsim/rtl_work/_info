@@ -1,0 +1,446 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Bussing-master\Bussing-master\Project3\simulation\modelsim
+vALU
+IfU_Kzc[OYPNUk0Q>LlSjW0
+Z1 VIY4kTo8@n2X0JdnJ5MX4C1
+Z2 dD:\Bussing-master\Bussing-master\Project3\simulation\modelsim
+Z3 w1448607076
+8D:/Bussing-master/Bussing-master/Project3/ALU.v
+FD:/Bussing-master/Bussing-master/Project3/ALU.v
+L0 1
+Z4 OV;L;10.1d;51
+r1
+31
+Z5 o-vlog01compat -work work -O0
+Z6 !s92 -vlog01compat -work work +incdir+D:/Bussing-master/Bussing-master/Project3 -O0
+Z7 n@a@l@u
+!i10b 1
+!s100 ZXlM>MN:^>nU2N_8X1`f[0
+!s85 0
+!s108 1448835581.762000
+!s107 D:/Bussing-master/Bussing-master/Project3/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/ALU.v|
+!s101 -O0
+vDataMem
+IEiEfg[R38YRCk7=_oCh`K0
+VQKICk@c5R[0e914CnEVbT1
+R2
+w1448817106
+8D:/Bussing-master/Bussing-master/Project3/DataMem.v
+FD:/Bussing-master/Bussing-master/Project3/DataMem.v
+L0 1
+R4
+r1
+31
+R5
+R6
+n@data@mem
+!i10b 1
+!s100 L=m9QfIVb7HIXHhO5f3Yf1
+!s85 0
+!s108 1448835585.120000
+!s107 D:/Bussing-master/Bussing-master/Project3/DataMem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/DataMem.v|
+!s101 -O0
+vForwardingUnit
+Ie?e2ig>>WK>M[6[Z[[eWd3
+Z8 VK3E^k?c^FinT=_:jBa:PW3
+R2
+R3
+8D:/Bussing-master/Bussing-master/Project3/ForwardingUnit.v
+FD:/Bussing-master/Bussing-master/Project3/ForwardingUnit.v
+L0 1
+R4
+r1
+31
+R5
+Z9 n@forwarding@unit
+R6
+!i10b 1
+!s100 =l=NoJP`?S8Cc2@4bbAF?2
+!s85 0
+!s108 1448835580.742000
+!s107 D:/Bussing-master/Bussing-master/Project3/ForwardingUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/ForwardingUnit.v|
+!s101 -O0
+vhexModule
+Ic5f_Ij79HC;=^03zQ?IV32
+V9ML2^V;?>=b[f>^mP7<Kb1
+R2
+w1448817176
+8D:/Bussing-master/Bussing-master/Project3/hexModule.v
+FD:/Bussing-master/Bussing-master/Project3/hexModule.v
+L0 1
+R4
+r1
+31
+R5
+R6
+nhex@module
+!i10b 1
+!s100 `Y>cH>fPYC;MWg;SHE;ob0
+!s85 0
+!s108 1448835584.691000
+!s107 D:/Bussing-master/Bussing-master/Project3/hexModule.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/hexModule.v|
+!s101 -O0
+vInstMemory
+IiN@5zN_o7XnbWSmCZkHE^3
+Z10 VUJYb>IZO9F_mPNHYd`^832
+R2
+R3
+8D:/Bussing-master/Bussing-master/Project3/InstMemory.v
+FD:/Bussing-master/Bussing-master/Project3/InstMemory.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z11 n@inst@memory
+!i10b 1
+!s100 oGFXS41ToZVZ4LV32Idb_3
+!s85 0
+!s108 1448835582.007000
+!s107 D:/Bussing-master/Bussing-master/Project3/InstMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/InstMemory.v|
+!s101 -O0
+vkeyModule
+IK;GbU3PP^>h]6ma6dFONH1
+VK?B`lhRK4knZ:fmJKn4zF1
+R2
+w1448815724
+8D:/Bussing-master/Bussing-master/Project3/Key.v
+FD:/Bussing-master/Bussing-master/Project3/Key.v
+L0 1
+R4
+r1
+31
+R5
+R6
+nkey@module
+!i10b 1
+!s100 8HIo1li7m`QS9H1J:B>XH2
+!s85 0
+!s108 1448835583.854000
+!s107 D:/Bussing-master/Bussing-master/Project3/Key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/Key.v|
+!s101 -O0
+vledgModule
+IgoIJ6=45TSIi9[5X0i5a`2
+VicXcG@Q=0HZcB6JV8NbfC2
+R2
+w1448817195
+8D:/Bussing-master/Bussing-master/Project3/ledgModule.v
+FD:/Bussing-master/Bussing-master/Project3/ledgModule.v
+L0 1
+R4
+r1
+31
+R5
+R6
+nledg@module
+!i10b 1
+!s100 _g>3mdVF`U@RAaRTzLDEO0
+!s85 0
+!s108 1448835584.482000
+!s107 D:/Bussing-master/Bussing-master/Project3/ledgModule.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/ledgModule.v|
+!s101 -O0
+vledrModule
+I4kK[hKen2n[fIJfZ3b8fA3
+V]YlYMdIlMLkcXcBCd5V`[1
+R2
+w1448817189
+8D:/Bussing-master/Bussing-master/Project3/ledrModule.v
+FD:/Bussing-master/Bussing-master/Project3/ledrModule.v
+L0 1
+R4
+r1
+31
+R5
+R6
+nledr@module
+!i10b 1
+!s100 0QSae`hEV7O:^gD7b1S`l0
+!s85 0
+!s108 1448835584.274000
+!s107 D:/Bussing-master/Bussing-master/Project3/ledrModule.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/ledrModule.v|
+!s101 -O0
+vMux2to1
+IQEid_aIk;QMl[WU`e7<nh2
+Z12 VS>^Vj[>3Jh`BcTXgdhn3^1
+R2
+R3
+8D:/Bussing-master/Bussing-master/Project3/Mux2to1.v
+FD:/Bussing-master/Bussing-master/Project3/Mux2to1.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z13 n@mux2to1
+!i10b 1
+!s100 OAclQG_3`nd>LDNPVmSZ43
+!s85 0
+!s108 1448835582.206000
+!s107 D:/Bussing-master/Bussing-master/Project3/Mux2to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/Mux2to1.v|
+!s101 -O0
+vMux3to1
+I@IN69eVBcmnmSTzK8Zo>`1
+Z14 VlAQ2zXKbZG5eL6DKG6Ti]3
+R2
+R3
+8D:/Bussing-master/Bussing-master/Project3/Mux3to1.v
+FD:/Bussing-master/Bussing-master/Project3/Mux3to1.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z15 n@mux3to1
+!i10b 1
+!s100 c?ehbENVH9lX_mUcaSY183
+!s85 0
+!s108 1448835582.410000
+!s107 D:/Bussing-master/Bussing-master/Project3/Mux3to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/Mux3to1.v|
+!s101 -O0
+vPCAdder
+I:M^HBDPjN>n:o]hZ?gF?Q0
+Z16 V7947d^EH64=dlh<=FQe?D2
+R2
+R3
+8D:/Bussing-master/Bussing-master/Project3/PCAdder.v
+FD:/Bussing-master/Bussing-master/Project3/PCAdder.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z17 n@p@c@adder
+!i10b 1
+!s100 z0Z7^kZ:ETd8GgP7meFkh0
+!s85 0
+!s108 1448835582.632000
+!s107 D:/Bussing-master/Bussing-master/Project3/PCAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/PCAdder.v|
+!s101 -O0
+vPCIncrement
+I10`mWKYo:`ANf@0OVXGK^3
+Z18 VEF3T_HaVB^aohYQgTCD9[0
+R2
+R3
+8D:/Bussing-master/Bussing-master/Project3/PCIncrement.v
+FD:/Bussing-master/Bussing-master/Project3/PCIncrement.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z19 n@p@c@increment
+!i10b 1
+!s100 R7TJbkUVHThfaLEN^@Kh`0
+!s85 0
+!s108 1448835582.826000
+!s107 D:/Bussing-master/Bussing-master/Project3/PCIncrement.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/PCIncrement.v|
+!s101 -O0
+vPLL
+IlnFT_g3X<Yg<10=3>o^Wk0
+VcRJBAi;iBH4]@Zh9O[[o60
+R2
+R3
+8D:/Bussing-master/Bussing-master/Project3/PLL.v
+FD:/Bussing-master/Bussing-master/Project3/PLL.v
+L0 39
+R4
+r1
+31
+R5
+R6
+n@p@l@l
+!i10b 1
+!s100 nWAcgCNGb_XeCJVTQ<fc63
+!s85 0
+!s108 1448835581.334000
+!s107 D:/Bussing-master/Bussing-master/Project3/PLL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/PLL.v|
+!s101 -O0
+vProcTest
+!i10b 1
+!s100 DB2QVnF9bd>nl=I7L>SBe0
+I>`oh`aYK^DbjXjE>M69e[2
+Z20 V>01jFz1@1N0io2LR?oz621
+R2
+w1448835570
+8D:/Bussing-master/Bussing-master/Project3/ProcTest.v
+FD:/Bussing-master/Bussing-master/Project3/ProcTest.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1448835585.395000
+!s107 D:/Bussing-master/Bussing-master/Project3/ProcTest.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/ProcTest.v|
+!s101 -O0
+R5
+R6
+Z21 n@proc@test
+vProject2
+IZ7DMf^gNoQCOUeM5:I=Q^2
+V0RP<X;8LA0<B8HcWLV4HG2
+R2
+w1448835431
+8D:/Bussing-master/Bussing-master/Project3/Project2.v
+FD:/Bussing-master/Bussing-master/Project3/Project2.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z22 n@project2
+!i10b 1
+!s100 L0JdPlHf:kFYXna:PPKE@3
+!s85 0
+!s108 1448835581.024000
+!s107 D:/Bussing-master/Bussing-master/Project3/Project2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/Project2.v|
+!s101 -O0
+vRegister
+IoQcKVcoMinj6[dj<cAaV@3
+Z23 VcF=KTBfmNkUbE2U153[EE2
+R2
+R3
+8D:/Bussing-master/Bussing-master/Project3/Register.v
+FD:/Bussing-master/Bussing-master/Project3/Register.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z24 n@register
+!i10b 1
+!s100 EWoGilBz=5gZn>HEWdYI60
+!s85 0
+!s108 1448835583.193000
+!s107 D:/Bussing-master/Bussing-master/Project3/Register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/Register.v|
+!s101 -O0
+vRegisterFile
+I=KTAWe89HFCl`;ENkd9UU3
+Z25 V0[Vh0R[DV9ll7MLUa??MB3
+R2
+R3
+8D:/Bussing-master/Bussing-master/Project3/RegisterFile.v
+FD:/Bussing-master/Bussing-master/Project3/RegisterFile.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z26 n@register@file
+!i10b 1
+!s100 NEY;LDLoM8eMmj=efk1gB3
+!s85 0
+!s108 1448835583.366000
+!s107 D:/Bussing-master/Bussing-master/Project3/RegisterFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/RegisterFile.v|
+!s101 -O0
+vSCProcController
+IC=kHinNbi>ioo[>Gnh@7N1
+Z27 VKLS;XF`C^=WzS8D;Xck@M3
+R2
+R3
+8D:/Bussing-master/Bussing-master/Project3/SCProcController.v
+FD:/Bussing-master/Bussing-master/Project3/SCProcController.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z28 n@s@c@proc@controller
+!i10b 1
+!s100 [N[1=eYGQn?F2YL=iiY1j3
+!s85 0
+!s108 1448835583.612000
+!s107 D:/Bussing-master/Bussing-master/Project3/SCProcController.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/SCProcController.v|
+!s101 -O0
+vSevenSeg
+IXHl7aNM76O3;m6EciJ?JC3
+Z29 VKZQ;?2zCF>`gI56YS>C7c1
+R2
+R3
+8D:/Bussing-master/Bussing-master/Project3/SevenSeg.v
+FD:/Bussing-master/Bussing-master/Project3/SevenSeg.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z30 n@seven@seg
+!i10b 1
+!s100 2>;RJ>?jDMaInl][<8AEP1
+!s85 0
+!s108 1448835581.174000
+!s107 D:/Bussing-master/Bussing-master/Project3/SevenSeg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/SevenSeg.v|
+!s101 -O0
+vSignExtension
+IU@^<]?cDi1Y]AB;ZE=^6M1
+Z31 VjjMXQ2A_@M;USO7=KT?Vh1
+R2
+R3
+8D:/Bussing-master/Bussing-master/Project3/SignExtension.v
+FD:/Bussing-master/Bussing-master/Project3/SignExtension.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z32 n@sign@extension
+!i10b 1
+!s100 jlo<H0:0@AM@9V>WXT67H1
+!s85 0
+!s108 1448835581.583000
+!s107 D:/Bussing-master/Bussing-master/Project3/SignExtension.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/SignExtension.v|
+!s101 -O0
+vswitchModule
+I_`D?Lo]997=g8lA<8M6mY3
+V80^RokACE;I^j<hEDE1bS1
+R2
+w1448815687
+8D:/Bussing-master/Bussing-master/Project3/Switch.v
+FD:/Bussing-master/Bussing-master/Project3/Switch.v
+L0 1
+R4
+r1
+31
+R5
+R6
+nswitch@module
+!i10b 1
+!s100 6__ga@fV6?zbe_YUlXRJL0
+!s85 0
+!s108 1448835584.066000
+!s107 D:/Bussing-master/Bussing-master/Project3/Switch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Bussing-master/Bussing-master/Project3|D:/Bussing-master/Bussing-master/Project3/Switch.v|
+!s101 -O0

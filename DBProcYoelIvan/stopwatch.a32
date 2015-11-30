@@ -1,0 +1,235 @@
+; Addresses for I/O
+.NAME   ORIGIN  = 0x10
+.NAME   STACKTOP= 2048
+.NAME   IOBASE  = 0xF0000000
+.NAME   OFSHEX  = 0x00000000
+.NAME   OFSLEDR = 0x00000004
+.NAME   OFSLEDG = 0x00000008
+.NAME   OFSKEY  = 0x00000010
+.NAME   OFSSW   = 0x00000014
+.NAME   TCNT    = 0x00000020;
+.NAME   TLIM    = 0x00000024;
+.NAME   TCTL    = 0x00000120;
+
+
+; Make sure fp always zero
+.ORIG 0x40
+    mvhi    sp, STACKTOP        ; setup stack
+    addi    sp, sp, STACKTOP    ; setup stack
+    mvhi    gp, IOBASE
+    xor     fp, fp, fp          ; zero out fp
+    and     t0, fp, fp          ; zero out t0
+    and     t1, fp, fp          ; zero out t1
+    and     a0, fp, fp
+    and     a1, fp, fp
+    and     a2, fp, fp
+    and     a3, fp, fp
+    and     s0, fp, fp
+    and     s1, fp, fp
+    and     s2, fp, fp
+    and     r9, fp, fp
+    and     r10, fp, fp
+    and     r11, fp, fp
+    and     ra, fp, fp
+    sw      fp, OFSHEX(gp)
+    sw      fp, OFSLEDG(gp)
+    sw      fp, OFSLEDR(gp)
+
+; t0 is input
+SetSec:
+    addi    t0, fp, 0x1
+    sw      t0, OFSLEDG(gp)
+    lw      t0, OFSSW(gp)       ; input = SW
+    andi    t0, t0, 0xFF
+
+    andi    s0, t0, 0xF0        ; s0 = input & 1111 0000
+    lti     s0, s0, 0x60        ; s0 = (s0 < 0110 0000) ? 1 : 0
+    bne     s0, fp, HiSecOk
+    andi    t0, t0, 0xF
+    addi    t0, t0, 0x50
+HiSecOk:
+    andi    s0, t0, 0xF         ; s0 = input & 1111
+    lti     s0, s0, 0xA         ; s0 = (s0 < 1010) ? 1 : 0
+    bne     s0, fp, LoSecOk
+    andi    t0, t0, 0xF0
+    addi    t0, t0, 0x9
+LoSecOk:
+    add     a0, t0, fp
+    sw      a0, OFSHEX(gp)
+
+WaitSecPress:
+    lw      t0, OFSKEY(gp)      ; ok = KEY
+    sw      t0, OFSLEDR(gp)
+    andi    s0, t0, 0x1
+    beq     s0, fp, SecNotRst
+    sw      fp, OFSHEX(gp)
+    br      CntRst
+SecNotRst:
+    andi    s0, t0, 0x2
+    beq     s0, fp, SetSec
+SecSet:
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x2
+    bne     t0, fp, SecSet
+
+
+SetMin:
+    addi    t0, fp, 0x2
+    sw      t0, OFSLEDG(gp)
+    lw      t0, OFSSW(gp)       ; input = SW
+    andi    t0, t0, 0xFF
+
+    andi    s0, t0, 0xF0        ; s0 = input & 1111 0000
+    lti     s0, s0, 0x60        ; s0 = (s0 < 0110 0000) ? 1 : 0
+    bne     s0, fp, HiMinOk
+    andi    t0, t0, 0xF
+    addi    t0, t0, 0x50
+HiMinOk:
+    andi    s0, t0, 0xF         ; s0 = input & 1111
+    lti     s0, s0, 0xA         ; s0 = (s0 < 1010) ? 1 : 0
+    bne     s0, fp, LoMinOk
+    andi    t0, t0, 0xF0
+    addi    t0, t0, 0x9
+LoMinOk:
+    addi    s0, fp, 8
+ShiftMin:
+    addi    s0, s0, -1
+    add     t0, t0, t0
+    bne     s0, fp, ShiftMin
+    add     a1, t0, fp
+    add     s0, a0, a1
+    sw      s0, OFSHEX(gp)
+
+WaitMinPress:
+    lw      t0, OFSKEY(gp)      ; ok = KEY
+    sw      t0, OFSLEDR(gp)
+    andi    s0, t0, 0x1
+    beq     s0, fp, MinNotRst
+    sw      fp, OFSHEX(gp)
+    br      CntRst
+MinNotRst:
+    andi    s0, t0, 0x2
+    beq     s0, fp, SetMin
+MinSet:
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x2
+    bne     t0, fp, MinSet
+
+Wait:
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x1
+    bne     t0, fp, CntRst
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x4
+    beq     t0, fp, Wait
+WaitEnding:
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x4
+    bne     t0, fp, WaitEnding
+    sw      fp, TCTL(gp)
+    sw      fp, TCNT(gp)    
+    bne     a0, fp, BEGIN
+    beq     a1, fp, Done
+
+BEGIN:
+; a0 sec a1 min
+; set limit
+    addi    t0, fp, 1000
+    sw      t0, TLIM(gp)
+    andi    a0, a0, 0x0000FF
+    andi    a1, a1, 0x00FF00
+    add     s0, a0, a1
+    sw      s0, OFSHEX(gp)
+Poll:
+;=====================I/O================
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x1
+    beq     t0, fp, CntNotRst
+    br      CntRst
+CntNotRst:
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x4
+    beq     t0, fp, Continue
+    br      startPAUSE
+CntRst:
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x1
+    sw      fp, OFSHEX(gp)
+    sw      fp, OFSLEDG(gp)
+    sw      fp, OFSLEDR(gp)
+    bne     t0, fp, CntRst
+    jmp     ORIGIN(fp)
+startPAUSE:
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x4
+    bne     t0, fp, startPAUSE
+PAUSE:
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x1
+    bne     t0, fp, CntRst
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x4
+    beq     t0, fp, PAUSE
+endPAUSE:
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x4
+    bne     t0, fp, endPAUSE
+    sw      fp, TCTL(gp)
+;=====================I/O================
+Continue:
+    lw      t1, TCTL(gp)
+    andi    t1, t1, 0x1
+    beq     t1, fp, Poll
+    sw      fp, TCTL(gp)
+    beq     a0, fp, DECMIN
+    andi    t0, a0, 0x00000F
+    beq     t0, fp, UPDLOSEC
+    addi    a0, a0, -1
+    andi    a0, a0, 0x0000FF
+    br      REFRESH
+UPDLOSEC:
+    addi    a0, a0, -1
+    andi    a0, a0, 0x0000F0
+    addi    a0, a0, 9
+    br      REFRESH
+DECMIN:
+    addi    a0, fp, 0x000059
+    andi    t0, a1, 0x000F00
+    beq     t0, fp, UPDLOMIN
+    addi    a1, a1, -1
+    andi    a1, a1, 0x00FF00
+    br      REFRESH
+UPDLOMIN:
+    addi    a1, a1, -1
+    andi    a1, a1, 0x00F000
+    addi    a1, a1, 0x000900
+REFRESH:
+    add     s0, a0, a1
+    sw      s0, OFSHEX(gp)
+    bne     a0, fp, Poll
+    beq     a1, fp, Done
+    br      Poll
+
+Done:
+; set limit
+    addi    t0, fp, 500
+    sw      t0, TLIM(gp)
+    sw      fp, OFSLEDG(gp)
+    not     s0, fp
+    sw      s0, OFSLEDR(gp)
+    sw      fp, TCTL(gp)
+    sw      fp, TCNT(gp)
+FlashPoll:
+;=====================I/O================
+    lw      t0, OFSKEY(gp)
+    andi    t0, t0, 0x1
+    beq     t0, fp, FlashNotRst
+    br      CntRst
+FlashNotRst:
+;=====================I/O================
+    lw      t1, TCTL(gp)
+    beq     t1, fp, FlashPoll
+    sw      fp, TCTL(gp)
+    not     s0, s0
+    sw      s0, OFSLEDR(gp)
+    br      FlashPoll
